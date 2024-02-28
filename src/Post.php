@@ -10,15 +10,6 @@ class Post{
     private string $author;
 
 
-    // public function loadFromDb(array $data): void
-    // {
-    //     $this->id = $data['id'];
-    //     $this->title = $data['title'];
-    //     $this->body = $data['body'];
-    //     $this->author = $data['author'];
-    //     $this->createdAt = $data['createdAt'];
-    // }
-
     /**
      * @return int
      */
