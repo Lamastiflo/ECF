@@ -6,7 +6,7 @@ use ECF\User;
 $error = null;
 $success = null;
 
-dump($_POST);
+
 if(!empty($_POST)){
     try {
         $pdo = new PDO('mysql:host=localhost;dbname=blog;port=3306', "root", "");

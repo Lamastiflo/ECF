@@ -23,15 +23,15 @@ include_once dirname(__DIR__) . DIRECTORY_SEPARATOR . "vendor" . DIRECTORY_SEPAR
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.php">Accueil</a>
+                    <a class="nav-link active" aria-current="page" href="/index.php">Accueil</a>
                 </li>
                 <?php if (!isset($_SESSION['user'])) : ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="../login.php">Login</a>
+                        <a class="nav-link" href="/login.php">Login</a>
                     </li>
                 <?php else : ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="../logout.php">Logout</a>
+                        <a class="nav-link" href="/logout.php">Logout</a>
                     </li>
                 <?php endif ?>
 
