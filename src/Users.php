@@ -2,7 +2,7 @@
 
 namespace Ecf;
 
-class User{
+class Users{
     private int $id;
     private string $name;
     private string $username;

@@ -1,7 +1,7 @@
 <?php
 include_once __DIR__ . DIRECTORY_SEPARATOR . "template" . DIRECTORY_SEPARATOR . "header.php";
 
-use ECF\User;
+use Ecf\Users;
 
 $error = null;
 $success = null;
@@ -13,9 +13,9 @@ if(!empty($_POST)){
         $stmt = $pdo->prepare("SELECT * FROM user WHERE username = :username");
         $stmt->bindParam('username', $_POST['login'], PDO::PARAM_STR);
         $stmt->execute();
-        $stmt->setFetchMode(PDO::FETCH_CLASS, User::class);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, Users::class);
         /**
-         * @var User
+         * @var Users
          */
         $user = $stmt->fetch();
 
