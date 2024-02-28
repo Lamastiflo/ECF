@@ -1,0 +1,14 @@
+{
+    "name": "yatag/ecf",
+    "autoload": {
+        "psr-4": {
+            "Ecf\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Florian"
+        }
+    ],
+    "require": {}
+}
